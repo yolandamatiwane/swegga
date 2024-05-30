@@ -1,4 +1,5 @@
 /* Examination number */
+/* Yolanda Matiwane */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -8,36 +9,46 @@ body {
 	padding: 0; }
 
 #page {
-	width: 710px;
+	width: 900px;
 	background-color: white;
 	margin: 10px auto;
 	border: 2px solid black;
 	padding: 10px; }
 
-#banner {
+#banner> img{
     margin-bottom: 1em;
-	height: 70px }
+	height: 85px;
+	width: 300px;
+}
 
-#navigation {
+#navigation> img{
 	margin-top: 1em;
-	height: 45px;
-	background-color: white; }
+	height: 56px;
+	width: 560px;
+
+	/* background-color: white;  */
+}
 	
 #sidebar {
 	width: 150px;
-	height: 370px;
+	height: 350px;
 	background-color: white;
 	margin-bottom: .7em;
-	float: left; }
+	float: left; 
+}
+
 
 .copyright {
     font-size: 90%;
     text-align: right; 
-	margin: 0; }
+	margin: 0;
+}
 	
 /* the styles for the table*/
 
 caption {
+	display: table-caption;
+	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	margin-top: 25px;
@@ -52,3 +63,17 @@ td, th {
 	
 .alignRight {
 	text-align: right; }
+
+/* Question 1.1 */
+
+#main{
+	margin-left: 150px;
+}
+#table{
+	border: 1px solid black;
+}
+#footer{
+	margin-top: .5em;
+	border-top: 2px solid gray;
+	padding-top: .7em;
+}
