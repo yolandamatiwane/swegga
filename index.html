@@ -13,101 +13,91 @@
 
 <body>
 <div id="page">
-	<div class="container-fluid">
-		<div class="row">
-		  <div class="col-2">
-			<div id="sidebar">
-				<img src="Swegga Resources-20240528/swegga.jpg" alt="">
-			</div>
-		  </div>
-		  <div class="col-10">
-			<div id="main">
-				<div id="banner">
-					<img src="Swegga Resources-20240528/delivery.gif" alt="">
-				</div>
-				<div id="navigation">
-					<img src="Swegga Resources-20240528/links.gif" alt="Workplace" usemap="#workmap">
-					<map name="workmap">
-						<area shape="rect" coords="15,5,95,35" href="order.html" alt="Home">
-						<area shape="rect" coords="105,5,190,35" href="services.html" alt="Services">
-						<area shape="rect" coords="205,5,300,35" href="products.html" alt="Products">
-						<area shape="rect" coords="310,5,440,35" href="orderStatus.html" alt="Order Status">
-						<area shape="rect" coords="450,5,555,35" href="contactUs.html" alt="Contact Us">
-					</map>
-				</div>
-				
-				<form>
-					<table id="table" class="table caption-top">
-						<caption>Product Summary</caption>
-						<thead>
-							<tr>
-							  <th scope="col">Description</th>
-							  <th scope="col">Size</th>
-							  <th scope="col">Colour</th>
-							  <th scope="col">Price</th>
-							  <th scope="col">Quantity</th>
-							  <th scope="col">Total</th>
-							</tr>
-						  </thead>
-						  <tbody>
-							<tr>
-							  <td><a href="female.html">Female Ski Jackets</a></td>
-							  <td>
-								<select class="form-select form-select-sm" aria-label="Small select example">
-									<option selected>choose size</option>
-									<option value="1">Small</option>
-									<option value="2">Medium</option>
-									<option value="3">Large</option>
-								</select>
-							  </td>
-							  <td>
-								  <select class="form-select form-select-sm" aria-label="Small select example">
-									<option selected>choose colour</option>
-									<option value="1">Red</option>
-									<option value="2">Pink</option>
-									<option value="3">Black</option>
-								  </select>
-							  </td>
-							  <td><span id="price1">150.95</span></td>
-							  <td><input id="inp1" type="text" placeholder="0"></td>
-							  <td><span id="femTot">0</span></td>
-							</tr>
-							<tr>
-							  <td><a href="male.html">Male Ski Jackets</a></td>
-							  <td>
-								  <select class="form-select form-select-sm" aria-label="Small select example">
-									  <option selected>choose size</option>
-									  <option value="1">Small</option>
-									  <option value="2">Medium</option>
-									  <option value="3">Large</option>
-								  </select>
-							  </td>
-							  <td>
-								  <select class="form-select form-select-sm" aria-label="Small select example">
-									  <option selected>choose colour</option>
-									  <option value="1">Red</option>
-									  <option value="2">Blue</option>
-									  <option value="3">White</option>
-								  </select>
-							  </td>
-							  <td><span id="price2">180.95</span></td>
-							  <td><input id="inp2" type="text" placeholder="0"></td>
-							  <td><span id="menTot">0</span></td>
-							</tr>
-							<tr>
-							  <td colspan="4">Click to confirm and process your order</td>
-							  <td>
-								<button type="button" class="btn btn-light">Total Price</button>
-							  </td>
-							  <td><span id="tot"></span></td>
-							</tr>
-						</tbody>
-					</table>
-				</form>
-			</div>
-			
-		  </div>
-		</div>
+	<div id="sidebar">
+		<img src="Swegga Resources-20240528/swegga.jpg" alt="">
+	</div>
+	<div id="banner">
+		<img src="Swegga Resources-20240528/delivery.gif" alt="">
+	</div>
+	<div id="navigation">
+		<img src="Swegga Resources-20240528/links.gif" alt="Workplace" usemap="#workmap">
+		<map name="workmap">
+			<area shape="rect" coords="15,5,95,35" href="order.html" alt="Home">
+			<area shape="rect" coords="105,5,190,35" href="services.html" alt="Services">
+			<area shape="rect" coords="205,5,300,35" href="products.html" alt="Products">
+			<area shape="rect" coords="310,5,440,35" href="orderStatus.html" alt="Order Status">
+			<area shape="rect" coords="450,5,555,35" href="contactUs.html" alt="Contact Us">
+		</map>
+	</div>
+	<div id="main">
+		<form>
+			<table id="table" class="table caption-top">
+				<caption>Product Summary</caption>
+				<thead>
+					<tr>
+					  <th scope="col">Description</th>
+					  <th scope="col">Size</th>
+					  <th scope="col">Colour</th>
+					  <th scope="col">Price</th>
+					  <th scope="col">Quantity</th>
+					  <th scope="col">Total</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td><a href="female.html">Female Ski Jackets</a></td>
+					  <td>
+						<select id="sel" class="form-select form-select-sm" aria-label="Small select example">
+							<option selected>choose size</option>
+							<option value="1">Small</option>
+							<option value="2">Medium</option>
+							<option value="3">Large</option>
+						</select>
+					  </td>
+					  <td>
+						  <select class="form-select form-select-sm" aria-label="Small select example">
+							<option selected>choose colour</option>
+							<option value="1">Red</option>
+							<option value="2">Pink</option>
+							<option value="3">Black</option>
+						  </select>
+					  </td>
+					  <td><span id="price1">150.95</span></td>
+					  <td><input id="inp1" type="text" placeholder="0"></td>
+					  <td><span id="femTot">0</span></td>
+					</tr>
+					<tr>
+					  <td><a href="male.html">Male Ski Jackets</a></td>
+					  <td>
+						  <select class="form-select form-select-sm" aria-label="Small select example">
+							  <option selected>choose size</option>
+							  <option value="1">Small</option>
+							  <option value="2">Medium</option>
+							  <option value="3">Large</option>
+						  </select>
+					  </td>
+					  <td>
+						  <select class="form-select form-select-sm" aria-label="Small select example">
+							  <option selected>choose colour</option>
+							  <option value="1">Red</option>
+							  <option value="2">Blue</option>
+							  <option value="3">White</option>
+						  </select>
+					  </td>
+					  <td><span id="price2">180.95</span></td>
+					  <td><input id="inp2" type="text" placeholder="0"></td>
+					  <td><span id="menTot">0</span></td>
+					</tr>
+					<tr>
+					  <td colspan="4">Click to confirm and process your order</td>
+					  <td>
+						<button type="button" class="btn btn-light">Total Price</button>
+					  </td>
+					  <td><span id="tot"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
 	</div>
 	<footer id="footer">
 		<p class="copyright">

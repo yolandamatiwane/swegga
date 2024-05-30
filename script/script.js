@@ -16,5 +16,3 @@ totBtn.addEventListener('click',()=>{
     tot.innerText = eval(`${tot1.innerText}+${tot2.innerText}`).toFixed(2)
 
 })
-
-
